@@ -17,46 +17,46 @@ public class IpLoggerActivity extends Activity {
 
     }
 
-    @Override
-    protected void onDestroy() {
-        FileLogger.log(this,"onDestroy");
-        Log.i("ZZZ", "onDestroy");
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onStop() {
-        Log.i("ZZZ", "onStop");
-        FileLogger.log(this,"onStop");
-        super.onStop();
-    }
-
-    @Override
-    protected void onRestart() {
-        Log.i("ZZZ", "onRestart");
-        FileLogger.log(this,"onRestart");
-        super.onRestart();
-    }
-
-    @Override
-    protected void onStart() {
-        Log.i("ZZZ", "onStart");
-        FileLogger.log(this,"onStart");
-        super.onStart();
-    }
-
-    @Override
-    protected void onResume() {
-        Log.i("ZZZ", "onResume");
-        FileLogger.log(this,"onResume");
-
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        Log.i("ZZZ", "onPause");
-        FileLogger.log(this,"onPause");
-        super.onPause();
-    }
+//    @Override
+//    protected void onDestroy() {
+//        FileLogger.log(this,"onDestroy");
+//        Log.i("ZZZ", "onDestroy");
+//        super.onDestroy();
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        Log.i("ZZZ", "onStop");
+//        FileLogger.log(this,"onStop");
+//        super.onStop();
+//    }
+//
+//    @Override
+//    protected void onRestart() {
+//        Log.i("ZZZ", "onRestart");
+//        FileLogger.log(this,"onRestart");
+//        super.onRestart();
+//    }
+//
+//    @Override
+//    protected void onStart() {
+//        Log.i("ZZZ", "onStart");
+//        FileLogger.log(this,"onStart");
+//        super.onStart();
+//    }
+//
+//    @Override
+//    protected void onResume() {
+//        Log.i("ZZZ", "onResume");
+//        FileLogger.log(this,"onResume");
+//
+//        super.onResume();
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        Log.i("ZZZ", "onPause");
+//        FileLogger.log(this,"onPause");
+//        super.onPause();
+//    }
 }
