@@ -16,7 +16,7 @@ class JsonMapper {
 
     init {
         objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS)
-        objectMapper.registerModule(JavaTimeModule())
+ //       objectMapper.registerModule(JavaTimeModule())
         writerPretty = objectMapper.writerWithDefaultPrettyPrinter()
         writer = objectMapper.writer()
     }

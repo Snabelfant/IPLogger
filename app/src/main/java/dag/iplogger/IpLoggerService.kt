@@ -2,6 +2,7 @@ package dag.iplogger
 
 import android.app.IntentService
 import android.app.Service
+import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.IBinder
@@ -16,15 +17,16 @@ class IpLoggerService : Service() {
 
     override fun onBind(intent: Intent): IBinder? = null
 
-    override fun onCreate() {
-        super.onCreate()
-    }
-
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
         Logger.info("service onStartCommand")
         val task = IpLoggerTask()
         task.execute()
         return Service.START_STICKY
+    }
+
+    override fun onUnbind(intent: Intent?): Boolean {
+        Logger.info("service unbind")
+        return super.onUnbind(intent)
     }
 
     override fun onDestroy() {
